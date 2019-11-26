@@ -31,6 +31,10 @@ public class LabyrinthImpl implements Labyrinth {
         //loadLabyrinthFile(fileName);
     }
 
+    public CellType[][] getMap() {
+        return map;
+    }
+
     @Override
     public int getWidth() {
         if (this.width == 0){
@@ -222,4 +226,6 @@ public class LabyrinthImpl implements Labyrinth {
             throw new InvalidMoveException();
         }
     }
+
+
 }
